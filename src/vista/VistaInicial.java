@@ -1,28 +1,13 @@
 package vista;
 
-import java.awt.EventQueue;
-
 import javax.swing.JFrame;
+import java.awt.BorderLayout;
+import javax.swing.JButton;
 
 public class VistaInicial {
 
 	private JFrame frame;
-
-	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					VistaInicial window = new VistaInicial();
-					window.frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
+	public JButton hola;
 
 	/**
 	 * Create the application.
@@ -38,6 +23,11 @@ public class VistaInicial {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		hola = new JButton("hol");
+		frame.getContentPane().add(hola, BorderLayout.SOUTH);
 	}
+	
+	public JFrame getJFrame() { return frame; }
 
 }
