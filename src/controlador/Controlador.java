@@ -23,6 +23,8 @@ public class Controlador {
 	
 	//Metodo privado que inicializa los escuchadores de los eventos
 	private void iniciarManejadores() {
-		miVista.hola.addMouseListener(new ManejadorBotones());
+		ManejadorBotones manejadorBotones= new ManejadorBotones(miVista);
+		miVista.hola.addMouseListener(manejadorBotones);
+		miVista.adios.addMouseListener(manejadorBotones);
 	}
 }

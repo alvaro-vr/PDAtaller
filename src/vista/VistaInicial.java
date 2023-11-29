@@ -8,6 +8,7 @@ public class VistaInicial {
 
 	private JFrame frame;
 	public JButton hola;
+	public JButton adios;
 
 	/**
 	 * Create the application.
@@ -26,6 +27,9 @@ public class VistaInicial {
 		
 		hola = new JButton("hol");
 		frame.getContentPane().add(hola, BorderLayout.SOUTH);
+		
+		adios = new JButton("adios");
+		frame.getContentPane().add(adios, BorderLayout.NORTH);
 	}
 	
 	public JFrame getJFrame() { return frame; }
