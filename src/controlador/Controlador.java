@@ -1,13 +1,11 @@
 package controlador;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
 import modelo.Modelo;
 import vista.VistaInicial;
+import controlador.ManejadoresEventos.*;
 
-public class Controlador implements ActionListener {
-	//
+public class Controlador {
+	//Variables del controlador
 	private Modelo miModelo;
 	private VistaInicial miVista;
 	
@@ -18,24 +16,13 @@ public class Controlador implements ActionListener {
 	}
 	
 	public void iniciarApp() {
+		iniciarManejadores();
 		miVista.getJFrame().setVisible(true);
-		
-		miVista.hola.addActionListener(new ActionListener() {
-			
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				// TODO Auto-generated method stub
-				System.out.println("Hola");
-			}
-		});
 	}
-
-	@Override
-	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
-		
-	}
-
 	
 	
+	//Metodo privado que inicializa los escuchadores de los eventos
+	private void iniciarManejadores() {
+		miVista.hola.addMouseListener(new ManejadorBotones());
+	}
 }
