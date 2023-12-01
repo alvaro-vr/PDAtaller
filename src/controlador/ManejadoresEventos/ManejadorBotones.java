@@ -16,11 +16,6 @@ public class ManejadorBotones implements MouseListener {
 	@Override
 	public void mouseClicked(MouseEvent e) {
 		// TODO Auto-generated method stub
-		if(e.getSource() == miVista.hola) {
-			System.out.println("Hola a ti tambien!");
-		}else if(e.getSource() == miVista.adios) {
-			System.out.println("Adios pringao ... ");
-		}
 	}
 
 	@Override

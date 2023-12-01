@@ -16,6 +16,7 @@ public class Controlador {
 	}
 	
 	public void iniciarApp() {
+		new vista.PantallaDeCarga().iniciarPantallaDeCarga();
 		iniciarManejadores();
 		miVista.getJFrame().setVisible(true);
 	}
@@ -24,7 +25,5 @@ public class Controlador {
 	//Metodo privado que inicializa los escuchadores de los eventos
 	private void iniciarManejadores() {
 		ManejadorBotones manejadorBotones= new ManejadorBotones(miVista);
-		miVista.hola.addMouseListener(manejadorBotones);
-		miVista.adios.addMouseListener(manejadorBotones);
 	}
 }
