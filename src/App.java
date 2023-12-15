@@ -1,4 +1,5 @@
 
+import modelo.Look;
 import modelo.Modelo;
 import vista.VistaInicial;
 import controlador.Controlador;

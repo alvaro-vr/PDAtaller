@@ -3,6 +3,8 @@ package controlador.ManejadoresEventos;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
+import javax.swing.JButton;
+
 import vista.VistaInicial;
 
 public class ManejadorBotones implements MouseListener {
