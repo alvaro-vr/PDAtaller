@@ -3,11 +3,9 @@ package vista;
 import javax.swing.JFrame;
 import java.awt.BorderLayout;
 import javax.swing.JPanel;
-import java.awt.Color;
 import java.awt.Dimension;
 import javax.swing.JLabel;
 import java.awt.Font;
-import javax.swing.JButton;
 import javax.swing.SwingConstants;
 
 public class VistaInicial extends JFrame{
