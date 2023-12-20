@@ -12,18 +12,31 @@ import java.awt.Font;
 import javax.swing.ImageIcon;
 import java.awt.BorderLayout;
 
+/**
+ * La clase PantallaDeCarga representa una ventana de carga para mostrar al iniciar la aplicación.
+ * Extiende JFrame y presenta un diseño sin decoración con un JLabel que incluye el nombre de la aplicación,
+ * un ícono y un temporizador de espera antes de ocultarse automáticamente. La ventana tiene un diseño BorderLayout
+ * con el JLabel centrado en la región central.
+ * 
+ * @author Alvaro Villares Rodríguez
+ * @version 1.0
+ */
+
 public class PantallaDeCarga extends JFrame {
+	
+	/** Etiqueta que muestra el nombre de la aplicación y un ícono de llave inglesa. */
 	public JLabel lblNombreApp;
 	/**
-	 * Create the application.
+	 * Crea una nueva instancia de PantallaDeCarga.
 	 */
 	public PantallaDeCarga() {
 		initialize();
 	}
 
-	/**
-	 * Initialize the contents of the frame.
-	 */
+	 /**
+     * Inicializa el contenido de la ventana de carga, establece propiedades como la ausencia de decoración,
+     * ubicación central, ícono y temporizador de espera antes de ocultarse automáticamente.
+     */
 	private void initialize() {
 		new JFrame();
 		setUndecorated(true);
@@ -39,6 +52,10 @@ public class PantallaDeCarga extends JFrame {
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
+	
+	/**
+     * Inicia la ventana de carga haciéndola visible y luego espera 3000 milisegundos (3 segundos) antes de ocultarla.
+     */
 	
 	public void iniciarPantallaDeCarga() {
 		setVisible(true);

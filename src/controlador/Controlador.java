@@ -61,9 +61,9 @@ public class Controlador {
 	
 	
 	/**
-	 * 
+	 * Método para configurar los colores de la aplicación
 	 * @param pantallaCarga es la pantalla previa a la aplicación que carga los componentes de la misma durante unos segundos
-	 * @param miVista
+	 * @param miVista es la Vista Inicial despues de ser cargada la aplicación
 	 */
 	private void configurarColores(PantallaDeCarga p, VistaInicial miVista) {
 		Look lookPDA = new Look();
